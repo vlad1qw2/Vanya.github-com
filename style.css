@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffb6c1, #ffe4e1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    max-width: 420px;
+    z-index: 10;
+}
+
+h1 {
+    color: #d6336c;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+}
+
+button {
+    margin-top: 25px;
+    padding: 15px 30px;
+    font-size: 18px;
+    background: #d6336c;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ad2954;
+    transform: scale(1.08);
+}
+
+/* ❄️ Сніжинки */
+.snowflake {
+    position: fixed;
+    top: -20px;
+    color: white;
+    user-select: none;
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh);
+    }
+}
